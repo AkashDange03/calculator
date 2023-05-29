@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://rare-gallery.com/thumbs/1105638-sunlight-illustration-abstract-purple-symmetry-circle-lens-flare-light-color-shape-line-flame-petal-computer-wallpaper-font.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.flex-row {
+
+    display: flex;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    gap: 5px;
+}
+
+.cal {
+    width: auto;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10%;
+    box-shadow: 20px 40px 50px;
+}
+
+
+
+.cal input {
+    width: 100%;
+    text-align: end;
+    font-size: 2rem;
+    border-radius: 5%;
+    padding-right: 10px;
+}
+
+
+
+.buttons {
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10%;
+}
+
+.buttons:hover {
+    transform: scale(1.05);
+    background-color: #4cc9f0;
+    opacity: 0.5;
+    box-shadow: 5px 5px 50px white;
+  }
+  
+
+.effect{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);   
+}
+
+.operators {
+    background-color: gainsboro;
+    color: black;
+}
+
+.row-3 {
+    grid-row: span 3;
+}
+
+.buttons-area {
+    margin-top: 10px;
+}
+
+.equal {
+    background-color: rgb(246, 147, 55);
+    color: white;
+}
+
+.glossy-background {
+    background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.footer{
+    font-size: 1rem;
+    padding: 10px;
+    color: white;
+    text-shadow: 3px 0 #DA0463;
+    }
+@media (max-width:1000px) {
+    .buttons{
+        font-size: 1rem;
+    }
+    .cal input{
+        font-size: 1rem;
+    }
+    body{
+        background-repeat: repeat-y;
+    }
+    .footer{
+        font-size: 0.8rem;
+    }
+}
+
+
